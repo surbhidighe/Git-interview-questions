@@ -19,6 +19,9 @@
 | 13 | [How can we see 5 recent commits in git](#13-how-can-we-see-5-recent-commits-in-git)  |
 | 14 | [how to set git user name and email globally](#14-how-to-set-git-user-name-and-email-globally)  |
 | 15 | [How to set git user name and email for a single repository](#15-how-to-set-git-user-name-and-email-for-a-single-repository)  |
+| 16 | [What are the different kinds of branches that can be created in git](#16-what-are-the-different-kinds-of-branches-that-can-be-created-in-git)  |
+| 17 | [What is git staging area](#17-what-is-git-staging-area)  |
+| 18 | [How to add changes to the staging area](#18-how-to-add-changes-to-the-staging-area)  |
 ---
 
 ### 1. What is Git
@@ -138,12 +141,12 @@ You can set your git username and email globally using the below commands
 
 ****To set username****
 ```bash
-git config --global user.name "NAME"
+$ git config --global user.name "NAME"
 ```
 
 ****To set email****
 ```bash
-git config --global user.email "EMAIL ID"
+$ git config --global user.email "EMAIL ID"
 ```
 **[:top: Scroll to Top](#git-interview-questions)**
 
@@ -152,12 +155,39 @@ You can set your git username and email for a specific repository using the belo
 
 ****To set username****
 ```bash
-git config user.name "NAME"
+$ git config user.name "NAME"
 ```
 
 ****To set email****
 ```bash
-git config user.email "EMAIL ID"
+$ git config user.email "EMAIL ID"
 ```
 **[:top: Scroll to Top](#git-interview-questions)**
 
+### 16. What are the different kinds of branches that can be created in git
+****main**** - It is the default branch. It contains the latest stable version of the code. 
+
+****Feature**** - It is created to develop a new feature or functionality.
+
+****Release**** - It is created to release a new version of your software.
+
+****Hotfix**** - It is used to quickly fix critical bugs or issues that are impacting the production environment.
+
+**[:top: Scroll to Top](#git-interview-questions)**
+
+### 17. What is git staging area
+The staging area is like a container that stores information about the changes you made to your files. It helps you decide which changes to include in your next commit.
+
+**[:top: Scroll to Top](#git-interview-questions)**
+
+### 18. How to add changes to the staging area
+'git add' command is used to add changes to the staging area.
+
+*To stage a file named "demo.js"*
+```js
+$ git add demo.js
+```
+*To stage all files*
+```js
+$ git add .
+```
